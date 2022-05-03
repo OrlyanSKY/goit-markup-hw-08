@@ -17,46 +17,51 @@
     <body>
         <header class="header">
             <div class="container header-content">
-                <nav class="navigation">
-                    <a class="logo" href="./index.html">
-                        <span class="logo__part">Web</span>Studio
-                    </a>
+                <a class="logo" href="./index.html"><span class="logo__part">Web</span>Studio </a>
+                <button class="mobile-btn" type="button">
+                    <svg width="40" height="40" aria-label="кнопка мобильного меню">
+                        <use href="./images/mobile-menu.svg#icon-cross-btn"></use>
+                        <use href="./images/mobile-menu.svg#icon-menu-btn"></use>
+                    </svg>
+                </button>
+                <div class="menu-wrap">
+                    <nav class="navigation">
+                        <ul class="site-nav">
+                            <li class="site-nav__item">
+                                <a class="site-nav__link site-nav__link--activ" href="./index.html"
+                                    >Студия</a
+                                >
+                            </li>
 
-                    <ul class="site-nav">
-                        <li class="site-nav__item">
-                            <a class="site-nav__link site-nav__link--activ" href="./index.html"
-                                >Студия</a
-                            >
+                            <li class="site-nav__item">
+                                <a class="site-nav__link" href="./portfolio.html">Портфолио</a>
+                            </li>
+
+                            <li class="site-nav__item">
+                                <a class="site-nav__link" href="">Контакты</a>
+                            </li>
+                        </ul>
+                    </nav>
+                    <ul class="contacts">
+                        <li class="contacts__item">
+                            <a class="contacts__link" href="mailto:info@devstudio.com">
+                                <svg class="contacts__icon" width="16" height="12">
+                                    <use href="./images/symbol-defs.svg#icon-envelope"></use>
+                                </svg>
+                                info@devstudio.com
+                            </a>
                         </li>
 
-                        <li class="site-nav__item">
-                            <a class="site-nav__link" href="./portfolio.html">Портфолио</a>
-                        </li>
-
-                        <li class="site-nav__item">
-                            <a class="site-nav__link" href="">Контакты</a>
+                        <li class="contacts__item">
+                            <a class="contacts__link" href="tel:+380961111111">
+                                <svg class="contacts__icon phone" width="10" height="16">
+                                    <use href="./images/symbol-defs.svg#icon-smartphone"></use>
+                                </svg>
+                                +38 096 111 11 11
+                            </a>
                         </li>
                     </ul>
-                </nav>
-                <ul class="contacts">
-                    <li class="contacts__item">
-                        <a class="contacts__link" href="mailto:info@devstudio.com">
-                            <svg class="contacts__icon" width="16" height="12">
-                                <use href="./images/symbol-defs.svg#icon-envelope"></use>
-                            </svg>
-                            info@devstudio.com
-                        </a>
-                    </li>
-
-                    <li class="contacts__item">
-                        <a class="contacts__link" href="tel:+380961111111">
-                            <svg class="contacts__icon phone" width="10" height="16">
-                                <use href="./images/symbol-defs.svg#icon-smartphone"></use>
-                            </svg>
-                            +38 096 111 11 11
-                        </a>
-                    </li>
-                </ul>
+                </div>
             </div>
         </header>
         <main>
@@ -205,7 +210,7 @@
                 </div>
             </section>
             <!-- Чем мы занимаемся -->
-            <section class="section">
+            <section class="our-products section">
                 <div class="container">
                     <h2 class="section-title">Чем мы занимаемся</h2>
                     <ul class="product">
@@ -569,7 +574,11 @@
                     <ul class="social-media">
                         <li class="social-media__item">
                             <a class="social-media__link social-media__link--modified" href="">
-                                <svg class="social-media__icon" width="20" height="20">
+                                <svg
+                                    class="social-media__icon social-media__icon--modified"
+                                    width="20"
+                                    height="20"
+                                >
                                     <use href="./images/symbol-defs.svg#icon-instagram"></use>
                                 </svg>
                             </a>
@@ -577,7 +586,11 @@
 
                         <li class="social-media__item">
                             <a class="social-media__link social-media__link--modified" href="">
-                                <svg class="social-media__icon" width="20" height="20">
+                                <svg
+                                    class="social-media__icon social-media__icon--modified"
+                                    width="20"
+                                    height="20"
+                                >
                                     <use href="./images/symbol-defs.svg#icon-twitter"></use>
                                 </svg>
                             </a>
@@ -585,7 +598,11 @@
 
                         <li class="social-media__item">
                             <a class="social-media__link social-media__link--modified" href="">
-                                <svg class="social-media__icon" width="20" height="20">
+                                <svg
+                                    class="social-media__icon social-media__icon--modified"
+                                    width="20"
+                                    height="20"
+                                >
                                     <use href="./images/symbol-defs.svg#icon-facebook"></use>
                                 </svg>
                             </a>
@@ -593,7 +610,11 @@
 
                         <li class="social-media__item">
                             <a class="social-media__link social-media__link--modified" href="">
-                                <svg class="social-media__icon" width="20" height="20">
+                                <svg
+                                    class="social-media__icon social-media__icon--modified"
+                                    width="20"
+                                    height="20"
+                                >
                                     <use href="./images/symbol-defs.svg#icon-linkedin"></use>
                                 </svg>
                             </a>
