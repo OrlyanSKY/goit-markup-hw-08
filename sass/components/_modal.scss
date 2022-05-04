@@ -1,0 +1,63 @@
+.backdrop {
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.2);
+    overflow-x: scroll;
+
+    transition: opacity 300ms cubic-bezier(0.4, 0, 0.2, 1),
+        visibility 300ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.modal {
+    position: absolute;
+    top: 93px;
+    left: 15px;
+    right: 15px;
+
+    padding: 40px;
+    max-width: 450px;
+    min-height: 609px;
+    transform: scale(1);
+    transition: transform 500ms cubic-bezier(0.4, 0, 0.2, 1);
+
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+        0px 2px 1px rgba(0, 0, 0, 0.2);
+    border-radius: 4px;
+    background-color: $generalColor;
+
+    .backdrop.is-hidden & {
+        transform: scale(0.1);
+    }
+
+    &__text {
+        font-weight: 700;
+        font-size: 20px;
+        line-height: 1.5;
+        color: $mainTitleColor;
+    }
+}
+.modal-btn {
+    position: absolute;
+    top: 8px;
+    right: 8px;
+    width: 30px;
+    height: 30px;
+    background-color: $generalColor;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    border-radius: 50%;
+
+    .modal-btn__icon {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    }
+    &:hover .modal-btn__icon,
+    &:focus .modal-btn__icon {
+        fill: $accentColor;
+    }
+}
