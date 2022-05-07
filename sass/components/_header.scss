@@ -23,6 +23,9 @@
     &.is-open {
         display: block;
     }
+    // @media screen and (min-width: 768px) {
+    //     display: flex;
+    // }
 }
 
 .mobile-btn {
@@ -49,6 +52,9 @@
         display: block;
     }
     &.is-open .mobile-btn__menu {
+        display: none;
+    }
+    @media screen and (min-width: 768px) {
         display: none;
     }
 }
@@ -117,6 +123,9 @@
             font-size: 20px;
         }
     }
+    @media screen and (min-width: 768px) {
+        display: none;
+    }
 }
 .mobile-socials {
     display: flex;
@@ -150,5 +159,8 @@
         @media screen and (max-width: 479px) {
             font-size: 15px;
         }
+    }
+    @media screen and (min-width: 768px) {
+        display: none;
     }
 }

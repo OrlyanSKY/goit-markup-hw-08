@@ -1,28 +1,30 @@
 .features {
     padding: 60px 0;
+    @media screen and (min-width: 1200px) {
+        padding-top: 94px;
+        padding-bottom: 94px;
+    }
 
     .features__list {
         @media screen and (min-width: 768px) {
             display: flex;
             flex-wrap: wrap;
+            margin-right: -30px;
+            margin-bottom: -30px;
         }
     }
 
     .features__item {
-        @media screen and (max-width: 767px) {
-            width: 100%;
-            &:not(:last-child) {
-                margin-bottom: 30px;
-            }
+        &:not(:last-child) {
+            margin-bottom: 30px;
         }
+
         @media screen and (min-width: 768px) {
-            width: 354px;
+            margin-right: 30px;
+            flex-basis: calc((100% - 2 * 30px) / 2);
         }
         @media screen and (min-width: 1200px) {
-            width: 270px;
-            &:not(:last-child) {
-                margin-right: 30px;
-            }
+            flex-basis: calc((100% - 4 * 30px) / 4);
         }
     }
 
@@ -31,7 +33,7 @@
         align-items: center;
         justify-content: center;
         min-height: 120px;
-        max-width: 480px;
+
         background-color: $lightBack;
 
         border-radius: 4px;
