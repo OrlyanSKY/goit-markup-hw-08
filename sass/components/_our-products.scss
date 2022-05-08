@@ -1,10 +1,9 @@
 .our-products {
-    padding-bottom: 94px;
+    display: none;
 
-    @media screen and (max-width: 1199px) {
-        display: none;
-    }
     @media screen and (min-width: 1200px) {
+        display: block;
+
         .product {
             display: flex;
             .product__item {
@@ -14,9 +13,7 @@
                     margin-right: 30px;
                 }
             }
-            .product__image {
-                display: block;
-            }
+
             .product__wrapper {
                 position: absolute;
                 padding: 27px 0 27px 0;

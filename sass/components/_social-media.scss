@@ -25,6 +25,13 @@
         }
         &.social-media__link--modified {
             background-color: rgba(255, 255, 255, 0.1);
+            @media screen and (min-width: 1200px) {
+                &:hover,
+                &:focus {
+                    background-color: $accentColor;
+                    color: $generalColor;
+                }
+            }
         }
     }
 
