@@ -721,16 +721,16 @@ img {
     display: inline-block;
   }
   .mobile-socials__item:nth-child(1):before {
-    background-image: url(../../images/instagram-svgrepo-com.svg);
+    background-image: url(../images/instagram-svgrepo-com.svg);
   }
   .mobile-socials__item:nth-child(2):before {
-    background-image: url(../../images/twitter-svgrepo-com.svg);
+    background-image: url(../images/twitter-svgrepo-com.svg);
   }
   .mobile-socials__item:nth-child(3):before {
-    background-image: url(../../images/facebook-svgrepo-com.svg);
+    background-image: url(../images/facebook-svgrepo-com.svg);
   }
   .mobile-socials__item:nth-child(4):before {
-    background-image: url(../../images/linkedin-svgrepo-com.svg);
+    background-image: url(../images/linkedin-svgrepo-com.svg);
   }
 }
 
