@@ -1156,32 +1156,37 @@ img {
 
 .our-products {
   display: none;
+  padding-bottom: 94px;
 }
 
 @media screen and (min-width: 1200px) {
   .our-products {
     display: block;
   }
-  .our-products .product {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-  }
-  .our-products .product .product__item {
-    position: relative;
-  }
-  .our-products .product .product__item:not(:last-child) {
-    margin-right: 30px;
-  }
-  .our-products .product .product__wrapper {
-    position: absolute;
-    padding: 27px 0 27px 0;
-    left: 0;
-    bottom: 0;
-    width: 100%;
-    text-align: center;
-    background: rgba(47, 48, 58, 0.8);
-  }
+}
+
+.product {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.product__item {
+  position: relative;
+}
+
+.product__item:not(:last-child) {
+  margin-right: 30px;
+}
+
+.product__wrapper {
+  position: absolute;
+  padding: 27px 0 27px 0;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  text-align: center;
+  background: rgba(47, 48, 58, 0.8);
 }
 
 .checkbox {
