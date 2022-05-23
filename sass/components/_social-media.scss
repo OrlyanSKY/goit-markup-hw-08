@@ -2,11 +2,11 @@
     display: flex;
     justify-content: center;
 
-    .social-media__item:not(:last-child) {
+    &__item:not(:last-child) {
         margin-right: 10px;
     }
 
-    .social-media__link {
+    &__link {
         display: flex;
         justify-content: center;
         align-items: center;
@@ -35,11 +35,12 @@
         }
     }
 
-    .social-media__icon {
+    &__icon {
         display: block;
         fill: currentColor;
-    }
-    .social-media__icon--modified {
-        fill: $generalColor;
+
+        &.social-media__icon--modified {
+            fill: $generalColor;
+        }
     }
 }
